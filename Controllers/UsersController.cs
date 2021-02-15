@@ -21,7 +21,7 @@ namespace Controllers
 
         //api/users/
         [HttpGet]
-        [Authorize]
+       // [Authorize]
         public async Task<ActionResult<IEnumerable<AppUser>>> GetUsers()
         {
             var users = await _context.Users.ToListAsync();
